@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+
+                    <!-- <h4 class="chatbox__heading--header">Chat support</h4> -->
+
+                    <p class="chatbox__description--header"><b>Hello! Welcome to SyntizenTechnologies Chat support</b></p>
+                </div>
+            </div>
+            <a><p style="font-size:15px;">Our Services:</p></a>
+            <a href="https://syntizen.com/edo-suite" style="color:blue;" target="_blank" title="Click here"><b> EDO </b></a>
+            <a href="https://syntizen.com/e-sign" style="color:blue;" target="_blank" title="Click here"><b> e-Sign </b></a>
+            <a href="https://syntizen.com/getkyc" style="color:blue;" target="_blank" title="Click here"><b> get KYC </b></a><br>
+            <a></a> 
+            
+            <!-- <a><b>Hi there, how can I help?</b></a>            -->
+
+
+
+
+            <div class="chatbox__messages">
+                <b>How can I help you Today?</b>
+                <img src="https://i.gifer.com/6pp1.gif">
+
+                
+  <!-- # https://i.gifer.com/QDyD.gif -->
+                <!-- <a href="https://syntizen.com" target="_blank"><b></b>:https://syntizen.com</a> -->
+
+                
+                <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Countries.." title="Type a Country Name"> -->
+   
+                <!-- <div class="dropup">
+                    <button class="dropbtn">Dropup</button>
+                    <div class="dropup-content">
+                      <a href="https://syntizen.com/edo-suite">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </div> -->
+
+                <!-- <div id="wrapper">
+                    <label for="yes_no_radio">Do you agree to the terms?</label>
+                  <p>
+                  <input type="radio" name="yes_no" checked>Yes</input>
+                  </p>
+                  <p>
+                  <input type="radio" name="yes_no">No</input>
+                  </p>
+                  </div> -->
+
+                <!-- <label for="appt">Choose a time for your meeting:</label>
+                <input type="time" id="appt" name="appt"
+                    min="09:00" max="18:00" required>
+
+                <small>Office hours are 9am to 6pm</small> -->
+
+                </select> 
+                <div>
+                </div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+        </div>
+    </div>
+</div>
+
+    <!-- <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script> -->
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>
